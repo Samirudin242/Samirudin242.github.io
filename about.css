@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&display=swap');
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+body {
+    margin:0;
+    font-family: 'Open Sans', sans-serif;
+}
+* {
+    box-sizing: border-box;
+}
+.about {
+    background-image: url('img/background.jpeg');
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    padding: 0 15px 70px;
+}
+.about img {
+    height: 400px;
+    width: 350px;
+    z-index: 3;
+    position: relative;
+}
+.about .overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color:#3b3936;
+    background-size: cover;
+    opacity: 0.8;
+    z-index: 1;
+}
+.container {
+    max-width: 1170px;
+    margin: auto;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about .page-title {
+    /*background-color:  gray;*/
+    flex-basis: 100%;
+    max-width: 100%;
+    text-align: center;
+    z-index: 10;
+    padding: 60px 0 50px;
+}
+.about .page-title h1.heading {
+    font-size: 45px;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    color: white;
+    margin: 0 0 15px;
+    padding: 0;
+}
+.about .page-title h1.heading span {
+   color: #ff8408; 
+}
+.about .page-title p.sub-heading  {
+font-size: 15px;
+text-transform: uppercase;
+font-weight: 400;
+color: white;
+margin: 0;
+display: inline-block;
+position: relative;
+}
+.about .page-title p.sub-heading::before {
+    content: '';
+    position: absolute;
+    left: -40px;
+    top: 10px;
+    width: 20px;
+    background-color: #ff8408;
+    height: 2px;
+} 
+.about .page-title p.sub-heading::after {
+    content: '';
+    position: absolute;
+    right: -40px;
+    top: 10px;
+    width: 20px;
+    background-color: #ff8408;
+    height: 2px;
+} 
+.btn-bg {
+    background-color:#ff8408;
+    border: 1px solid #ff8408 ;
+    padding: 10px 30px;
+    display: inline-block;
+    color: white; 
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family:'Open Sans', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    border-radius: 25px;
+    transition: all .5s ease;
+}
+.btn-bg:hover {
+    background-color: transparent;
+    color:#ff8408;
+}
+.about .personal-info {
+    flex-basis: 100%;
+    max-width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    z-index: 4;
+    align-items: center;
+}
+.about .personal-info .img-box{
+    padding: 0 15px;
+    flex-basis: 50%;
+    max-width: 50%;
+}
+.about .personal-info .img-box .pic {
+    margin: auto;
+    max-width: 440px;
+    position: relative;
+}
+.about .personal-info .img-box .pic::before {
+    content: '';
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    border: 6px solid #ff8408;
+    z-index: 1;
+}
+.about .personal-info .img-box img {
+    display: block;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+}
+.about .personal-info .img-box  .info {
+    padding: 0 15px;
+    flex-basis: 50%;
+    max-width: 50%;
+}
+.about .personal-info .info .col-6 {
+    flex-basis: 50%;
+    max-width: 50%;
+}
+.about .personal-info .info ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.about .personal-info .info ul li {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
+}
+.about .personal-info .info ul li span {
+    opacity: 0.6;
+    margin-right: 15px;
+    margin-bottom: 5px;
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

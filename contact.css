@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&display=swap');
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+body {
+    margin:0;
+    font-family: 'Open Sans', sans-serif;
+}
+* {
+    box-sizing: border-box;
+}
+.contact {
+    background-image: url('img/background.jpeg');
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    padding: 0 15px 50px;
+}
+
+.contact .overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color:#3b3936;
+    background-size: cover;
+    opacity: 0.8;
+    z-index: 1;
+}
+.container {
+    max-width: 1170px;
+    margin: auto;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.contact .page-title {
+    /*background-color:  gray;*/
+    flex-basis: 100%;
+    max-width: 100%;
+    text-align: center;
+    z-index: 10;
+    padding: 60px 0 50px;
+}
+.contact .page-title h1.heading {
+    font-size: 45px;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    color: white;
+    margin: 0 0 15px;
+    padding: 0;
+}
+.contact .page-title h1.heading span {
+   color: #ff8408; 
+}
+.contact .page-title p.sub-heading  {
+font-size: 15px;
+text-transform: uppercase;
+font-weight: 400;
+color: white;
+margin: 0;
+display: inline-block;
+position: relative;
+}
+.contact .page-title p.sub-heading::before {
+    content: '';
+    position: absolute;
+    left: -40px;
+    top: 10px;
+    width: 20px;
+    background-color: #ff8408;
+    height: 2px;
+} 
+.contact .page-title p.sub-heading::after {
+    content: '';
+    position: absolute;
+    right: -40px;
+    top: 10px;
+    width: 20px;
+    background-color: #ff8408;
+    height: 2px;
+} 
+.contact-info {
+    position: relative;
+    z-index: 3;
+    flex-basis: 33.33%;
+    max-width: 33.33%;
+    padding: 0 15px;
+}
+.contact .contact-form {
+    z-index: 3;
+    flex-basis: 66.5%;
+    max-width: 66.33%;
+    padding: 0 15px;
+}
+
+.contact .contact-info h6 {
+    margin: 0 0 8px;
+    font-weight: 400;
+    color: white;
+    opacity: 0.8;
+    font-size: 15px;
+}
+.contact .contact-info p {
+    margin: 0 0 25px;
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+}
+.contact .contact-info p span {
+    display: inline-block;
+    color:#ff8408;
+    margin-right: 10px;
+}
+.contact .contact-info .social-links span {
+    display: inline-block;
+    height: 35px;
+    width: 35px;
+    color: #ff8408;
+    border: 1px solid #ff8408;
+    border-radius: 50%;
+    line-height: 33px;
+    text-align: center;
+    margin-right: 10px;
+}
+.contact .contact-form p {
+    font-size: 16px;
+    color: white;
+    margin: 0 0 15px;
+    font-weight: 500;
+    line-height: 28px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.contact-form  .form-box .col-6 {
+    flex-basis: calc(50% - 15px);
+    max-width: calc(50% - 15px);
+    position: relative;
+}
+.contact-form .form-box .col-12 {
+    flex-basis: 100%;
+    max-width: 100%;
+    position: relative;
+}
+.contact .contact-form .form-box .icon {
+    position: absolute;
+    color: #ff8408;
+    font-size: 15px;
+    top: 15px;
+    left: 18px;
+}
+.contact-form .form-box .form-control {
+    display: block;
+    width: 100%;
+    height: 45px;
+    border-radius: 25px;
+    padding: 6px 12px 6px 45px;
+    background-color: #e3ab5d;
+    border: 3px solid #ff8408;
+    margin-bottom: 30px;
+    font-size: 15px;
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+}
+.contact-form .form-box textarea.form-control {
+    height: 130px;
+}
+.contact .contact-form .form-box .row {
+    justify-content: space-between;
+}
+
+.btn-bg {
+    background-color:#ff8408;
+    border: 1px solid #ff8408 ;
+    padding: 10px 30px;
+    display: inline-block;
+    color: white; 
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family:'Open Sans', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    border-radius: 25px;
+    transition: all .5s ease;
+    cursor: pointer;
+}
+.btn-bg:hover {
+    background-color: transparent;
+    color:#ff8408;
+}
